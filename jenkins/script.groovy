@@ -3,8 +3,8 @@ def buildApp() {
     sh 'mvn install'
 } 
 def testApp() {
-    echo "Testing the application..."
-
+    echo "building the application..."
+    sh 'mvn test'
 } 
 def buildImage() {
     echo "building the docker image..."
