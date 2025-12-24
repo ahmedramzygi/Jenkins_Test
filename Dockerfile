@@ -5,7 +5,7 @@ COPY . .
 RUN mvn clean package
 
 # Run stage
-FROM openjdk:8-jre-alpine
+FROM jvapp:latest
 EXPOSE 8080
 WORKDIR /usr/app
 COPY --from=build /app/target/java-maven-app-*.jar /usr/app/
