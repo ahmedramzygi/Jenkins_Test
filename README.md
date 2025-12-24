@@ -1,1 +1,1 @@
-New trigger to the pipeline
+sNew trigger to the pipeline
